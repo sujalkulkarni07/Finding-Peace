@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Explore The World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Reuse global styles from home.html */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0077b6, #00aaff);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0077b6;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .about h2 {
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 190px;
+            height: 250px;
+            border-radius: 8%;
+            margin-bottom: 12px;
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #0077b6;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>About Us</h1>
+        <p>Discover the story behind FINDIND PEACE.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Our Mission</h2>
+        <p>
+            At FINDIND PEACE, we believe that travel is more than just visiting new places—it's about creating unforgettable experiences. Our mission is to provide you with the best travel packages, personalized service, and expert guidance to make your journey truly special. Whether you're seeking adventure, relaxation, or cultural immersion, we're here to help you explore the world in style.
+        </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="team1.jpg" alt="John Doe">
+            <h3>Cristiano Ronaldo dos Santos Aveiro</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="team2.jpg" alt="Jane Smith">
+            <h3>Thomas Shelby</h3>
+            <p>Travel Consultant</p>
+        </div>
+        <div class="team-member">
+            <img src="team3.jpg" alt="Mike Johnson">
+            <h3>Sergio Ramos García</h3>
+            <p>Customer Support</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Explore The World. All rights reserved.</p>
+    </footer>
+</body>
+</html>

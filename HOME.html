@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINDIND PEACE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0077b6, #00aaff);
+            color: white;
+            padding: 60px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0077b6;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Destinations Section */
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .destination {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .destination:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination h3 {
+            font-size: 1.5rem;
+            margin: 15px 0 10px;
+            color: #0077b6;
+        }
+
+        .destination p {
+            padding: 0 20px 20px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, #0077b6, #00aaff);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .testimonials h2 {
+            color: white;
+        }
+
+        blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        blockquote::after {
+            content: "”";
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        .newsletter input:focus {
+            border-color: #0077b6;
+            outline: none;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .newsletter button:hover {
+            background: #005a8d;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>FINDING PEACE</h1>
+        <p>Your gateway to unforgettable travel experiences.</p>
+    </header>
+
+    <!-- Destinations Section -->
+    <section class="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination">
+            <img src="destination1.jpg" alt="Tropical Beach">
+            <h3>Maldives</h3>
+            <p>Crystal-clear waters, white sandy beaches, and luxury resorts.</p>
+        </div>
+        <div class="destination">
+            <img src="destination2.jpg" alt="Mountain View">
+            <h3>Switzerland</h3>
+            <p>Breathtaking landscapes, picturesque villages, and alpine adventures.</p>
+        </div>
+        <div class="destination">
+            <img src="destination3.jpg" alt="Safari">
+            <h3>Kenya</h3>
+            <p>Experience the thrill of wildlife safaris in the heart of Africa.</p>
+        </div>
+        <div class="destination">
+            <img src="destination4.jpg" alt="Cityscape">
+            <h3>Japan</h3>
+            <p>Discover the perfect blend of tradition and modernity.</p>
+        </div>
+        <div class="destination">
+            <img src="destination5.jpg" alt="Northern Lights">
+            <h3>Iceland</h3>
+            <p>Witness the mesmerizing Northern Lights and stunning glaciers.</p>
+        </div>
+        <div class="destination">
+            <img src="destination6.jpg" alt="Historical Sites">
+            <h3>Italy</h3>
+            <p>Explore ancient ruins, art, and delicious cuisine.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Travelers Say</h2>
+        <blockquote>
+            "The best vacation experience of my life! Highly recommended." - MAHESH DALLE
+        </blockquote>
+        <blockquote>
+            "Amazing service and breathtaking destinations. Will book again!" - ADARSH GHARBAR
+        </blockquote>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Explore The World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
